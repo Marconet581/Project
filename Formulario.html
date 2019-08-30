@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+    <style>
+        input{
+            background-color: aquamarine;
+            margin-top: 5px;
+        }
+        .Mar{
+            background-color:teal;
+            width: 450px;
+            height: 1050px;
+        }
+        textarea{
+            background-color:lightsalmon;
+        }
+    </style>
+</head>
+<body>                              
+<form action="#" class="Mar">
+    <br>Nome:<br><input type="text" value="Marcos" name="nome" size="20px"><br>
+    <br>Endereço:<br> <input type="text" name="end" size="50px"><br>
+
+    <label for="Senha"><br>Senha:</label>
+    <br><input type="password" name="senha" id="Senha"><br>
+
+    <label for="NOME"><br>Nome:</label><br>
+    <input type="text" id="NOME" name="NoMe" placeholder="Digite o Endereço" maxlength="20" required autofocus >
+    <input type="submit" value="NEXT"><br><br>
+    <input type="submit">
+    <input type="reset" value="Limpar">
+    <input type="button" value="Clicar" onclick="alert('Olá Mundo!!!')"><br><br><br>
+    
+    <label>Qual a sua Fruta Preferida?</label><br>
+    <label for="laranja">Laranja</label>
+    <input type="checkbox" name="laranja" checked>
+    <label for="maça">Maça</label>
+    <input type="checkbox" name="maça">
+    <label for="pera">Pera</label>
+    <input type="checkbox" name="pera">
+    <label for="uva">Uva</label>
+    <input type="checkbox" name="uva"><br><br>    
+    
+    <label>Qual a seu Time Preferido?</label><br>    
+    <label for="Vasco">Vasco</label>
+    <input type="radio" value="1" name="time">
+    <label for="Botafogo">Botafogo</label>
+    <input type="radio" value="2" name="time">
+    <label for="Flamengo">Flamengo</label>
+    <input type="radio"  value="3" name="time">
+    <label for="Fluminense">Fluminense</label>
+    <input type="radio" value="4" name="time"><br><br>
+
+    Cor: <br>
+    <input type="color" name="" id=""><br>
+    Arquivo: <br>
+    <input type="file" name="File"><br>
+    Num: <input type="number" name="Num" min="10" max="50" value="20"><br><br>
+    Número: <input type="range" min="10" max="50"><br>
+    URL : <input type="url"><br>
+    Informe a Data : <input type="date" min="2019-01-01" max="2019-12-31"><br>
+    Informe o Mês  : <input type="month"><br>
+    Informe a Data com Hora :  <input type="datetime-local"><br><br>
+
+    <textarea cols="25" rows="8" placeholder="Digite aqui Mané"></textarea><br><br>
+
+    Selecione a Cidade: <br>
+    <select name="cidade">
+        <option selected value="1"><--Selecione--></option>
+        <option value="jaraguá">Jaraguá do Sul</option>
+        <option value="blumenau">Blumenau</option>
+        <option  value="joinville">Joinville</option>
+    </select><br><br>
+
+    Selecione a Cidade: <br>
+    <select name="cidade" size="4" multiple>
+            <option selected value="1"><--Selecione--></option>
+            <option value="jaraguá">Jaraguá do Sul</option>
+            <option value="blumenau">Blumenau</option>
+            <option  value="joinville">Joinville</option>
+    </select><br><br>
+</form>
+<form oninput="x.value=parseint(a.value)+parseint(b.value)"></form>>
+    Num1: 0 <input type="range" id="a" name="a" value="50">100<br>
+    Num2: 0 <input type="number" id="b" name="b" value="50">100<br>
+    Resultado: <output name="x" for="a b"></output><br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
